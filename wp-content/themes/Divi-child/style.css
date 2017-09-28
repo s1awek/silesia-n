@@ -16,3 +16,36 @@ Updated: 2017-09-27 16:05:59
 	background-color: #FF8800!important;
 }
 
+#top-menu li.current-menu-item a:before, #top-menu li:hover a:before {
+    opacity: 1;
+}
+
+#top-menu li a:before, #top-menu li.fb-link:hover a:before {
+    content: ' ';
+    border-top-style: solid;
+    border-top-width: 5px;
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -25px;
+    opacity: 0;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: 9999;
+    border-top-color: #fff;
+}
+
+#et-top-navigation {
+    float: none!important;
+    text-align: center!important;
+    padding-left: 0!important;
+}
+
+#et-top-navigation {
+    font-weight: 600;
+}
+
+#top-menu, .fullwidth-menu, nav#top-menu-nav, nav.fullwidth-menu-nav {
+	float: none;
+}
